@@ -1,6 +1,7 @@
 # gfs-head
 
- future-team 框架demo共用头尾。
+ 根据 future-team 框架 练习demo，
+ 原地址:https://github.com/future-team/gfs-head
 
 
 ## 引入 
