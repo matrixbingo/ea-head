@@ -1,4 +1,4 @@
-import {Head,Footer} from '../../dist/gfs-head.js'
+import {Head,Footer} from '../../dist/ea-head.js'
 import React, { Component ,PropTypes} from 'react';
 import ReactDom from 'react/lib/ReactDOM';
 let titles = [

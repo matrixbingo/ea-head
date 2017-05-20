@@ -65,7 +65,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var _distGfsHeadJs = __webpack_require__(2);
+	var _distEaHeadJs = __webpack_require__(2);
 	
 	var _react = __webpack_require__(3);
 	
@@ -76,9 +76,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	var _reactLibReactDOM2 = _interopRequireDefault(_reactLibReactDOM);
 	
 	var titles = [{ title: '博客', href: 'http://uedfamily.com/' }, { title: '文档', href: 'http://www.baidu.com' }, { title: '关于我们', href: 'http://uedfamily.com/about/' }, { title: '更多组件', href: 'http://uedfamily.com/framework/' }];
-	_reactLibReactDOM2['default'].render(_react2['default'].createElement(_distGfsHeadJs.Head, { titles: titles }), document.getElementById('head'));
+	_reactLibReactDOM2['default'].render(_react2['default'].createElement(_distEaHeadJs.Head, { titles: titles }), document.getElementById('head'));
 	_reactLibReactDOM2['default'].render(_react2['default'].createElement(
-	    _distGfsHeadJs.Footer,
+	    _distEaHeadJs.Footer,
 	    { content: 'adasdas' },
 	    'sddsdssdsd'
 	), document.getElementById('footer'));

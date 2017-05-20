@@ -1,14 +1,14 @@
 {
-  "name": "gfs-head",
+  "name": "ea-head",
   "version": "0.0.5",
   "description": "common head for framework demo",
   "repository": {
     "type": "git",
-    "url": "git@github.com:future-team/gfs-head.git"
+    "url": "git@github.com/matrixbingo/ea-head.git"
   },
   "author": {
-    "name": "qianjin.pan",
-    "email": "qianjin.pan@dianping.com"
+    "name": "matrixbingo",
+    "email": "maoshiba2006@126.com"
   },
   "keywords": [
     "common head "
