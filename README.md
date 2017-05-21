@@ -21,6 +21,10 @@
   * 头部支持配置，传入一个title数组即可。如下:  
   
     ```js
+        const logo = {
+            className: 'logo',
+            title: 'FutureTeam'
+        };
        let titles = [
            {title: '博客', href: 'http://uedfamily.com/'},
            {title: '文档', href: 'http://xxx.com'},
@@ -28,11 +32,11 @@
            {title: '更多组件', href: 'http://uedfamily.com/framework/'}
        ];
        ReactDom.render(
-           <Head titles = {titles}></Head>,
+           <Head logo={logo} titles={titles}></Head>,
            document.getElementById('head')
        );
     ```
-  * 底部信息支持传参和children两种形式,两者都存在的情况下，children形式优先。  
+  * 底部信息支持传参和children两种形式,两者都存在的情况下，children形式优先。
     
     ```js
        ReactDom.render(
