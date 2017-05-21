@@ -1,7 +1,11 @@
-import React,{PropTypes,Component} from 'react';
+import React, {PropTypes, Component} from 'react';
 import classnames from 'classnames';
 export default class Head extends Component {
     static defaultProps = {
+        logo: {
+            className: 'logo',
+            title: 'FutureTeam'
+        },
         titles: [{title: '文档', href: 'http://uedfamily.com/'},
             {title: '博客', href: 'http://uedfamily.com/'},
             {title: '关于我们', href: 'http://uedfamily.com/about/'},
@@ -9,8 +13,9 @@ export default class Head extends Component {
     };
 
     renderMainNav(titles) {
-        let mainNav = titles.map((item)=> {
-            return <a className='nav-link' href={item.href}>{item.title}</a>
+        let i = 1;
+        let mainNav = titles.map((item) => {
+            return <a key={++i} className='nav-link' href={item.href}>{item.title}</a>
         });
         return <div className='main-nav'>{mainNav}</div>
     }
@@ -29,15 +34,16 @@ export default class Head extends Component {
     }
 
     render() {
-        let {titles} = this.props;
-        let content = this.renderMainNav(titles);
+        const {logo, titles} = this.props;
+        const content = this.renderMainNav(titles);
+
         return (
             <div>
                 <div className='head-inner'>
                     <div className='outer'>
                         <a className='logo-link'>
-                            <i className='logo'></i>
-                            <span className='team-title'>FutureTeam</span>
+                            <i className={logo.className}></i>
+                            <span className='team-title'>{logo.title}</span>
                         </a>
                         {content}
                     </div>
