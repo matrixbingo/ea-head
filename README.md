@@ -1,4 +1,4 @@
-# gfs-head
+# ea-head
 
  根据 future-team 框架 练习demo，
  原地址:https://github.com/future-team/gfs-head
@@ -25,16 +25,16 @@
             className: 'logo',
             title: 'FutureTeam'
         };
-       let titles = [
-           {title: '博客', href: 'http://uedfamily.com/'},
-           {title: '文档', href: 'http://xxx.com'},
-           {title: '关于我们', href: 'http://uedfamily.com/about/'},
-           {title: '更多组件', href: 'http://uedfamily.com/framework/'}
-       ];
-       ReactDom.render(
-           <Head logo={logo} titles={titles}></Head>,
-           document.getElementById('head')
-       );
+        let titles = [
+            {title: '博客', href: 'http://uedfamily.com/'},
+            {title: '文档', href: 'http://xxx.com'},
+            {title: '关于我们', href: 'http://uedfamily.com/about/'},
+            {title: '更多组件', href: 'http://uedfamily.com/framework/'}
+        ];
+        ReactDom.render(
+            <Head logo={logo} titles={titles}></Head>,
+            document.getElementById('head')
+        );
     ```
   * 底部信息支持传参和children两种形式,两者都存在的情况下，children形式优先。
     
@@ -50,6 +50,7 @@
 ## version
 
 ```
+    * 0.0.8 添加logo属性
 	* 0.0.5 修复必要的css
 	* 0.0.2 删除不必要的reactDom
 	* 0.0.1 初始版本
