@@ -6,7 +6,7 @@
 
 ## 引入 
   ```js
-     import {Head,Footer} from '../../src/index.js'
+     import {Head,Footer} from 'ea-head'
   ```
 ## 使用  
   * 首先保证html中存在head,footer两部分以供插入。如下  
